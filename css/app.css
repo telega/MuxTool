@@ -1,0 +1,28 @@
+#progress { 
+	width: 200px;
+	/*border: 1px solid #ccc;*/
+	height: 6px;
+}
+
+.pane-content{
+	padding:10px;
+}
+
+#progress_container{
+	bottom:24px;
+	position: absolute;
+}
+
+.filename{
+	text-align: center;
+	font-size:large;
+	font-weight:bold;
+	margin-top:10px;
+	margin-bottom:10px;
+	word-wrap:break-word;
+}
+
+.pathname{
+	word-wrap:break-word;
+}
+

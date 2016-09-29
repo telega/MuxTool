@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MuxTool</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/photon.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- Electron Javascript -->
+    <script src="app.js" charset="utf-8"></script>
+    <!--<script src="js/menu.js" charset="utf-8"></script>-->
+    <script src="js/progressbar.min.js" charset="utf-8"></script>
+
+  </head>
+
+  <body>
+    <!-- Wrap your entire app inside .window -->
+    <div class="window">
+      <div class="window-content">
+        <div class="pane-group">
+          <div id="video_file_pane" class="pane sidebar">
+            &nbsp;<span class="icon icon-video"></span>
+            <br>
+            <div class = 'pane-content'>
+              Drag &amp; Drop <strong> video</strong> file here.
+              <div id="video_file" class = 'filename'>No file Selected.</div>
+              <div id="video_file_path" class = 'pathname' ></div>
+            </div>
+          </div>
+          <div id="audio_file_pane" class="pane sidebar">
+            &nbsp;<span class="icon icon-sound"></span>
+            <br>
+            <div class = 'pane-content'>
+              Drag &amp; Drop <strong> audio</strong> file here.
+              <div id="audio_file" class = 'filename'>No file Selected.</div>
+              <div id="audio_file_path" class = 'pathname'></div>
+            </div>
+          </div>
+          <div class="pane">
+            &nbsp;<span class="icon icon-drive"></span>
+            <br>
+            <div class = 'pane-content'>
+            <button id="create-new-file" class="btn btn-default">Select Output Destination </button>
+            <br>
+            <div id="output_file" class = 'filename'>Output not set.</div>
+            <div id="output_file_path" class = 'pathname'></div>
+            <div id = "progress_container">
+            Mux Progress: 
+              <div id = "progress"></div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="toolbar toolbar-footer">
+  <div class="toolbar-actions">
+    <button id = "reset_button" class="btn btn-default">
+      Reset
+    </button>
+
+    <button id="mux_button" class="btn btn-negative pull-right">
+      Mux
+    </button>
+  </div>
+</footer>
+    </div>
+    <script>
+      require('./renderer.js')
+    </script> 
+  </body>
+</html>
