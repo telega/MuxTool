@@ -1,13 +1,20 @@
 {
   "name": "MuxTool",
   "productName": "MuxTool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tool to mux audio and video files with ffmpeg",
   "main": "app.js",
-  "author": "Tom Allen",
+  "homepage": "http://github.com/telega/MuxTool",
+  "author": {
+    "name": "Thomas Allen",
+    "email": "tom@telega.org",
+    "url": "http://telega.org"
+  },
   "scripts": {
     "start": "electron ."
   },
+  "repository": "git@github.com:telega/MuxTool.git",
+  "license": "MIT",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.0.3",
     "@ffprobe-installer/ffprobe": "^1.0.4",
